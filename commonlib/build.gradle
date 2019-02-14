@@ -33,7 +33,7 @@ dependencies {
     api rootProject.ext.dependencies["supportV7"]
     api rootProject.ext.dependencies["constraint_layout"]
     api rootProject.ext.dependencies["junit"]
-    implementation rootProject.ext.dependencies["arouterApi"]
+    api rootProject.ext.dependencies["arouterApi"]
     annotationProcessor rootProject.ext.dependencies["arouterAnnotation"]
     api rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknifeAnnotation"]

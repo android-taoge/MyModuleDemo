@@ -10,6 +10,15 @@ android {
         versionCode rootProject.ext.versions["versionCode"]
         versionName rootProject.ext.versions["versionName"]
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        compileOptions {
+
+            sourceCompatibility JavaVersion.VERSION_1_8
+
+            targetCompatibility JavaVersion.VERSION_1_8
+
+        }
+
     }
     buildTypes {
         release {
@@ -17,11 +26,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        pickFirst 'META-INF/*'
+    }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':commonlib')
+    implementation rootProject.ext.dependencies["supportV7"]
     if(isNeedChatModule.toBoolean()){
         implementation project(":chat")
     }
