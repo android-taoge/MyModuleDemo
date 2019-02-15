@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path="mine/MineActivity")
+@Route(path="/mine/MineActivity")
 public class MineActivity extends AppCompatActivity {
 
     @Override

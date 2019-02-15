@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path = "chat/ChatActivity")
+@Route(path = "/chat/ChatActivity")
 public class ChatActivity extends AppCompatActivity {
 
     @Override

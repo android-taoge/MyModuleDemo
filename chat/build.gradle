@@ -51,7 +51,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':commonlib')
-    implementation rootProject.ext.dependencies["supportV7"]
-    implementation rootProject.ext.dependencies["arouterApi"]
-    annotationProcessor rootProject.ext.dependencies["arouterAnnotation"]
+    //Arouter路由
+    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    //黄油刀
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
 }

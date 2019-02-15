@@ -33,8 +33,13 @@ dependencies {
     api rootProject.ext.dependencies["supportV7"]
     api rootProject.ext.dependencies["constraint_layout"]
     api rootProject.ext.dependencies["junit"]
-    api rootProject.ext.dependencies["arouterApi"]
-    annotationProcessor rootProject.ext.dependencies["arouterAnnotation"]
+    //MultiDex分包方法
+    api rootProject.ext.dependencies["multidex"]
+    //黄油刀
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
     api rootProject.ext.dependencies["butterknife"]
-    annotationProcessor rootProject.ext.dependencies["butterknifeAnnotation"]
+    //Arouter路由
+    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    api rootProject.ext.dependencies["arouter_api"]
+    api rootProject.ext.dependencies["arouter_annotation"]
 }

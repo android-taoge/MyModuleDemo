@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path="find/FindActivity")
+@Route(path="/find/FindActivity")
 public class FindActivity extends AppCompatActivity {
 
     @Override

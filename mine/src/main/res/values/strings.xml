@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mine</string>
+    <string name="mine">我的</string>
+
 </resources>
